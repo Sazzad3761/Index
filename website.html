@@ -1,0 +1,186 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Football Club</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+    <header>
+        <h1>Chattogram United FC</h1>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#players">Players</a>
+            <a href="#about">About</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <h2>One Team, One Dream!</h2>
+        <p>Welcome to our football club.</p>
+    </section>
+
+    <section id="players">
+        <h2 class="heading">Our Players</h2>
+
+        <div class="player-container">
+
+            <div class="player">
+                <h3>Rahim Ahmed</h3>
+                <p>Position: Goalkeeper</p>
+                <p>Age: 26</p>
+                <p>Jersey: 01</p>
+            </div>
+
+            <div class="player">
+                <h3>Hasan Mahmud</h3>
+                <p>Position: Defender</p>
+                <p>Age: 24</p>
+                <p>Jersey: 04</p>
+            </div>
+
+            <div class="player">
+                <h3>Arif Hossain</h3>
+                <p>Position: Midfielder</p>
+                <p>Age: 25</p>
+                <p>Jersey: 08</p>
+            </div>
+
+            <div class="player">
+                <h3>Rafi Islam</h3>
+                <p>Position: Midfielder</p>
+                <p>Age: 23</p>
+                <p>Jersey: 10</p>
+            </div>
+
+            <div class="player">
+                <h3>Tanvir Rahman</h3>
+                <p>Position: Winger</p>
+                <p>Age: 22</p>
+                <p>Jersey: 07</p>
+            </div>
+
+            <div class="player">
+                <h3>Shakib Karim</h3>
+                <p>Position: Striker</p>
+                <p>Age: 27</p>
+                <p>Jersey: 09</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Our Club</h2>
+        <p>
+            We are a football club from Chattogram.
+            We believe in teamwork and fair play.
+        </p>
+    </section>
+
+    <footer>
+        <p>© 2026 Chattogram United FC</p>
+    </footer>
+
+</body>
+</html>
+
+/* Whole Website */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f1f5f2;
+}
+
+/* Header */
+header {
+    background-color: darkgreen;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+
+/* Welcome Section */
+.hero {
+    background-color: #176b45;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+/* Player Section */
+#players {
+    padding: 30px;
+}
+
+.heading {
+    text-align: center;
+}
+
+/* Player Cards */
+.player-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.player {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid lightgray;
+}
+
+.player:hover {
+    background-color: #dcefe2;
+}
+
+/* About Section */
+#about {
+    background-color: #dcefe2;
+    padding: 30px;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    background-color: darkgreen;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Tablet Screen */
+@media (max-width: 900px) {
+    .player-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Mobile Screen */
+@media (max-width: 600px) {
+    .player-container {
+        grid-template-columns: 1fr;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px;
+    }
+}
+
